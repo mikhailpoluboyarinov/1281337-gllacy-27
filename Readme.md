@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Mikhail Poluboyarinov](https://up.htmlacademy.ru/htmlcss/27/user/1281337).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
