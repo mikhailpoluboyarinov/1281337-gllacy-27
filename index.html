@@ -10,7 +10,7 @@
       <h1 class="visually-hidden">Магазин мороженого Глейси.</h1>
       <nav>
         <a>
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Gllacy»">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного Глейси">
         </a>
         <ul>
           <li><a href="catalog.html">Каталог</a>
@@ -29,11 +29,29 @@
       <ul>
         <li>
           <form action="https://echo.htmlacademy.ru" method="search">
-            <input type="search" name="search" value="" placeholder="Крем-брюле">
+            <label for="search">Поиск мороженного</label>
+            <input type="search" id="search" name="search" placeholder="Крем-брюле">
           </form>
         </li>
         <li>
-          <button>Вход</button>
+          <button type="button">Вход</button>
+          <div class="visually-hidden">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="........">
+              </p>
+              <button type="submit">Войти</button>
+              <ul>
+                <li><a href="#">Забыли пароль?</a></li>
+                <li><a href="#">Новая регистрация</a></li>
+              </ul>
+            </form>
+          </div>
         </li>
         <li>
           <a href="#">Пусто</a>
@@ -49,22 +67,25 @@
       <section>
         <ul>
           <li>
+            <img src="img/slider-1.jpg" width="1045" height="881" alt="Мороженое крем-брюле и пломбир с малиновым джемом">
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
             <a href="#">Давайте оба!</a>
           </li>
           <li>
+            <img src="img/slider-2.jpg" width="1065" height="859" alt="Шоколадное мороженое и лемонный сорбет">
             <h3>Шоколадный пломбир и лимонный сорбет</h3>
             <a href="#">Давайте оба!</a>
           </li>
           <li>
+            <img src="img/slider-3.jpg" width="1079" height="854" alt="Мороженое с помадкой и клубничный щербет">
             <h3>Пломбир с помадкой и клубничный щербет</h3>
             <a href="#">Давайте оба!</a>
           </li>
         </ul>
         <div>
-          <button>Первый слайд</button>
-          <button>Второй слайд</button>
-          <button>Третий слайд</button>
+          <button type="button" aria-label="Слайдер 1">Первый слайд</button>
+          <button type="button" aria-label="Слайдер 2">Второй слайд</button>
+          <button type="button" aria-label="Слайдер 3">Третий слайд</button>
         </div>
       </section>
       <section>
@@ -127,16 +148,16 @@
         </h2>
         <ul>
           <li>
-            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
           <li>
-            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           </li>
           <li>
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
           <li>
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
       </section>
@@ -147,8 +168,9 @@
       <section>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="email" value="" placeholder="email@example.com">
-          <button>Отправить</button>
+          <label for="email_1"></label>
+          <input type="email" id="email_1" name="email" placeholder="email@example.com">
+          <button type="button">Отправить</button>
         </form>
       </section>
       <section>
@@ -164,7 +186,7 @@
             <b>8 812 450-25-25</b>
             <span>(с 10 до 20 ежедневно)</span>
           </p>
-          <a href="#">Форма обратной связи</a>
+          <a href="#" class="button">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -172,10 +194,10 @@
     <footer>
       <div>
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Инстаграм</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#" aria-label="Twitter"></a></li>
+          <li><a href="#" aria-label="Instagram"></a></li>
+          <li><a href="#" aria-label="Facebook"></a></li>
+          <li><a href="#" aria-label="Vkontakte"></a></li>
         </ul>
       </div>
       <div>
@@ -191,6 +213,28 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
+
+
+    <section class=" visually-hidden">
+        <p>Мы обязательно вам ответим!</p>
+        <button type="button">Закрыть</button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="name">Имя Фамилия</label>
+              <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email_2">email</label>
+              <input type="email" id="email_2" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="text">Пожелания</label>
+              <textarea id="text" name="text" cols="" rows="5" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+    </section>
+
 
   </body>
 </html>
