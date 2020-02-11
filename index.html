@@ -28,9 +28,8 @@
       </nav>
       <ul>
         <li>
-          <form action="https://echo.htmlacademy.ru" method="search">
-            <label for="search">Поиск мороженного</label>
-            <input type="search" id="search" name="search" placeholder="Крем-брюле">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" id="search" name="search" placeholder="Что ищем?">
           </form>
         </li>
         <li>
@@ -38,12 +37,10 @@
           <div class="visually-hidden">
             <form action="https://echo.htmlacademy.ru" method="post">
               <p>
-                <label for="email">email</label>
-                <input type="email" id="email" name="email" placeholder="email@example.com">
+                <input type="email" id="email" name="email" placeholder="Электронная почта">
               </p>
               <p>
-                <label for="password">Пароль</label>
-                <input type="password" id="password" name="password" placeholder="........">
+                <input type="password" id="password" name="password" placeholder="Пароль">
               </p>
               <button type="submit">Войти</button>
               <ul>
@@ -168,9 +165,8 @@
       <section>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="email_1"></label>
-          <input type="email" id="email_1" name="email" placeholder="email@example.com">
-          <button type="button">Отправить</button>
+          <input type="email" id="email_1" name="email" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
         </form>
       </section>
       <section>
@@ -220,16 +216,16 @@
         <button type="button">Закрыть</button>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <label for="name">Имя Фамилия</label>
-              <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" placeholder="Как вас зовут?">
             </p>
             <p>
-              <label for="email_2">email</label>
-              <input type="email" id="email_2" name="email" placeholder="email@example.com">
+              <label for="email_2"></label>
+              <input type="email" id="email_2" name="email" placeholder="Ваша почта для ответа?">
             </p>
             <p>
-              <label for="text">Пожелания</label>
-              <textarea id="text" name="text" cols="" rows="5" placeholder="В свободной форме"></textarea>
+              <label for="text"></label>
+              <textarea id="text" name="text" cols="" rows="5" placeholder="Напишите что-нибудь..."></textarea>
             </p>
             <button type="submit">Отправить</button>
           </form>

@@ -28,7 +28,7 @@
       </nav>
       <ul>
         <li>
-          <form action="https://echo.htmlacademy.ru" method="search">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label for="search">Поиск мороженного</label>
             <input type="search" id="search" name="search" placeholder="Крем-брюле">
           </form>
@@ -38,12 +38,10 @@
           <div class="visually-hidden">
             <form action="https://echo.htmlacademy.ru" method="post">
               <p>
-                <label for="email">email</label>
-                <input type="email" id="email" name="email" placeholder="email@example.com">
+                <input type="email" id="email" name="email" placeholder="Электронная почта">
               </p>
               <p>
-                <label for="password">Пароль</label>
-                <input type="password" id="password" name="password" placeholder="........">
+                <input type="password" id="password" name="password" placeholder="Пароль">
               </p>
               <button type="submit">Войти</button>
               <ul>
@@ -56,35 +54,32 @@
         <li>
           <button type="button"><span>2</span>товара</button>
         <div class="visually-hidden">
-          <table>
-            <tr>
-              <td>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <ul>
+              <li>
                 <button type="button">Удалить</button>
-              </td>
-              <td>
-                <img src="img/ice-cream_orange_small.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой мороженое">
-              </td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х 200 руб.</td>
-              <td>300 руб.</td>
-            </tr>
-            <tr>
-              <td>
+                <a href="#">
+                  <img src="img/ice-cream_orange_small.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой мороженое">
+                  <span>Пломбир с апельсиновым джемом</span>
+                </a>
+                  <span>1,5 кг х 200 руб.</span>
+                  <span>300 руб.</span>
+              </li>
+              <li>
                 <button type="button">Удалить</button>
-              </td>
-              <td>
-                <img src="img/ice-cream_strawberry_small.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада мороженое">
-              </td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х 300 руб.</td>
-              <td>450 руб.</td>
-            </tr>
-          </table>
-          <div>
-            <span>Итого:</span>
-            <span>750 руб.</span>
+                <a href="#">
+                  <img src="img/ice-cream_strawberry_small.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада мороженое">
+                  <span>Клубничный пломбир с присыпкой из белого шоколада</span>
+                </a>
+                <span>1,5 кг х 300 руб.</span>
+                <span>450 руб.</span>
+              </li>
+              <li>
+                <span>Итого: 750 руб</span>
+              </li>
+            </ul>
             <a href="#">Оформить заказ</a>
-          </div>
+          </form>
         </div>
         </li>
       </ul>
