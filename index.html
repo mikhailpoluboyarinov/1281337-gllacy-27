@@ -40,39 +40,35 @@
                   <span class="visually-hidden">Найти</span>
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" aria-label="Кнопка поиска" viewBox="0 0 17 17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
                 </a>
-                <ul class="search-field">
-                  <li>
-                    <h2 class="visually-hidden">Поиск</h2>
-                    <form name="search" method="post" action="https://echo.htmlacademy.ru">
-                      <input type="search" name="search-text" placeholder="Что ищем?" aria-label="Поиск по сайту">
-                    </form>
-                  </li>
-                </ul>
+                <div class="search-field">
+                  <h2 class="visually-hidden">Поиск</h2>
+                  <form name="search" method="post" action="https://echo.htmlacademy.ru">
+                    <input type="search" name="search-text" placeholder="Что ищем?" aria-label="Поиск по сайту">
+                  </form>
+                </div>
               </li>
               <li class="login">
                 <a class="login-button" href="#" type="button">Вход</a>
-                <ul class="login-form">
-                  <li>
-                    <h2 class="visually-hidden">Личный кабинет</h2>
-                    <form name="login" method="post" action="https://echo.htmlacademy.ru">
-                      <p class="login-item">
-                        <label for="login-email" class="visually-hidden">Электронная почта</label>
-                        <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
+                <div class="login-form">
+                  <h2 class="visually-hidden">Личный кабинет</h2>
+                  <form name="login" method="post" action="https://echo.htmlacademy.ru">
+                    <p class="login-item">
+                      <label for="login-email" class="visually-hidden">Электронная почта</label>
+                      <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
+                    </p>
+                    <p class="login-item">
+                      <label for="login-password" class="visually-hidden">Пароль</label>
+                      <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
+                    </p>
+                    <div class="links-wrapper">
+                      <p class="links">
+                        <a href="#" class="login-form-forgot">Забыли пароль?</a>
+                        <a href="#" class="login-form-sin-up">Новая регистрация</a>
                       </p>
-                      <p class="login-item">
-                        <label for="login-password" class="visually-hidden">Пароль</label>
-                        <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
-                      </p>
-                      <div class="links-wrapper">
-                        <p class="links">
-                          <a href="#" class="login-form-forgot">Забыли пароль?</a>
-                          <a href="#" class="login-form-sin-up">Новая регистрация</a>
-                        </p>
-                        <button class="button login" type="submit">Войти</button>
-                      </div>
-                    </form>
-                  </li>
-                </ul>
+                      <button class="button login" type="submit">Войти</button>
+                    </div>
+                  </form>
+                </div>
               </li>
               <li class="cart empty-cart">
                 <a class="cart-button" href="#">Пусто</a>
@@ -265,7 +261,7 @@
           </ul>
         </div>
         <div class="footer-copyright">
-          <a class="logo-href" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy"></a>
+          <a class="logo-href" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy"></a>
           <p>Сделано в <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
         </div>
       </footer>
@@ -292,6 +288,6 @@
       </section>
     </div>
 
-
+   <script src="js/script.js"></script>
   </body>
 </html>
