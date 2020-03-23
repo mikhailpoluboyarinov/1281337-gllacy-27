@@ -1665,6 +1665,10 @@ select.filters-sorting::-ms-expand {
   border-color: rgba(255, 255, 255, 1);
 }
 
+.checkbox-filter:checked + label::before {
+  border: none;
+}
+
 .checkbox-filter:checked + label::after {
   content: "";
   position: absolute;
@@ -2231,7 +2235,3 @@ select.filters-sorting::-ms-expand {
     transform: translateX(10px);
   }
 }
-
-
-
-
