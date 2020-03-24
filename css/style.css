@@ -2172,12 +2172,6 @@ select.filters-sorting::-ms-expand {
   animation: bounce 0.6s;
 }
 
-.close-modal {
-  display: block;
-  -webkit-animation: bounce1 0.6s;
-  animation: bounce1 0.6s;
-}
-
 .error-modal {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
@@ -2208,28 +2202,6 @@ select.filters-sorting::-ms-expand {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-  }
-}
-
-@keyframes bounce1 {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  70% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-
-  90% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
   }
 }
 
