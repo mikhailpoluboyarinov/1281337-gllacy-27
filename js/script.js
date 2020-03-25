@@ -36,9 +36,11 @@ link.addEventListener("click", function (evt) {
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
+  setTimeout(function() {
   popup.classList.remove("show-modal");
   mask.classList.remove("visible");
   popup.classList.remove("error-modal");
+  }, 600);
 });
 
 form.addEventListener("submit", function (evt) {
@@ -57,9 +59,12 @@ form.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains("show-modal")) {
+      evt.preventDefault();
+      setTimeout(function() {
       popup.classList.remove("show-modal");
       popup.classList.remove("error-modal");
       mask.classList.remove("visible");
+      }, 600);
     }
   }
 });
