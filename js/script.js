@@ -36,10 +36,12 @@ link.addEventListener("click", function (evt) {
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
+  popup.classList.add('modal-out');
   setTimeout(function() {
   popup.classList.remove("show-modal");
   mask.classList.remove("visible");
   popup.classList.remove("error-modal");
+  popup.classList.remove('modal-out');
   }, 600);
 });
 
@@ -60,10 +62,12 @@ window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains("show-modal")) {
       evt.preventDefault();
+      popup.classList.add('modal-out');
       setTimeout(function() {
       popup.classList.remove("show-modal");
       popup.classList.remove("error-modal");
       mask.classList.remove("visible");
+      popup.classList.remove('modal-out');
       }, 600);
     }
   }

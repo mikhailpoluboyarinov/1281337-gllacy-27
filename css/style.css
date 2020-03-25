@@ -2172,6 +2172,11 @@ select.filters-sorting::-ms-expand {
   animation: bounce 0.6s;
 }
 
+.modal-out {
+  -webkit-animation: bounceOut 0.6s;
+  animation: bounceOut 0.6s;
+}
+
 .error-modal {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
@@ -2227,5 +2232,47 @@ select.filters-sorting::-ms-expand {
   80% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes bounceOut {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+    opacity: 0;
   }
 }
